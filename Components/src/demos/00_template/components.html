@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Components Demo</title>
+    <script src="../../js/react.min.js"></script>
+    <script src="../../js/react-dom.min.js"></script>
+    <script src="../../js/browser.min.js"></script>
+</head>
+
+<body>
+    <div id="container"></div>
+
+    <script type="text/babel">
+        var Component1 = React.createClass({
+
+            render:function () {
+                return(<h1>Welcome to components!!</h1>);
+            }
+        });
+
+        ReactDOM.render(<Component1/>,document.getElementById('container'));
+    </script>
+
+</body>
+</html>
