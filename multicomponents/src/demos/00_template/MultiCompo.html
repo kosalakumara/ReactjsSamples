@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multiple Components</title>
+    <script src="../../js/react.min.js"></script>
+    <script src="../../js/react-dom.min.js"></script>
+    <script src="../../js/browser.min.js"></script>
+</head>
+<body>
+
+    <div id="container"></div>
+
+    <script type="text/babel">
+
+        var Compo = React.createClass({
+
+           render:function () {
+               return(
+                 <div>
+                     <h1>Main topic</h1>
+                     <h2>Sub topic</h2>
+                 </div>
+               );
+           }
+        });
+
+        ReactDOM.render(
+            <div>
+                <Compo/>
+                <Compo/>
+                <Compo/>
+            </div>,document.getElementById('container'));
+
+
+    </script>
+</body>
+</html>
